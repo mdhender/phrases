@@ -20,3 +20,6 @@ func main() {
   }
 }
 ```
+
+# Words
+Word listed copied from the Wikipedia article "Complete Shakespeare Wordlist."
