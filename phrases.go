@@ -13,7 +13,8 @@ func Generate(n int, separators ...string) (passphrase string) {
 		separators = []string{" ", ".", "+", "-"}
 	}
 
-	passphrase += words[rand.IntN(len(words))]
+	passphrase, n = words[rand.IntN(len(words))], n - 1
+
 	for ; n > 0; n-- {
 		passphrase += separators[rand.IntN(len(separators))]
 		passphrase += words[rand.IntN(len(words))]
