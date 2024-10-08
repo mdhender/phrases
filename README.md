@@ -8,16 +8,12 @@ package main
 
 import (
   "fmt"
-  "github.com/mdhender/phrases"
+  psg "github.com/mdhender/phrases"
 )
 
 func main() {
-	psg, err := phrases.NewGenerator("words.json", " ")
-	if err != nil {
-		fmt.Println(err)
-	} else {
-    fmt.Println(psg.Generate(5))
-  }
+    // the list of separators is optional
+    fmt.Println(psg.Generate(5, "."))
 }
 ```
 
